@@ -24,7 +24,8 @@ structure.
 based on multiple KPIs.
 • calculate_break_even_roundtrips() – Computes the number of trips to recover a $90M
 aircraft cost.
-6. Metadata: New Columns created during the analysis
+
+**6. Metadata: New Columns created during the analysis**
 Key / Column Name Description
 ROUTE 1.
 A directional route string in format ORIGIN-DEST
