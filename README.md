@@ -7,26 +7,36 @@ performance, break-even modeling, and KPI tracking. The codebase supports a data
 investment decision using reproducible Python functions and visual analytics.
 
 **3. Input Datasets**
+
 • Flights.csv: Flight-level operational data including delays, distance, occupancy
+
 • Tickets.csv: Ticket fares and passenger estimates for each route
+
 • Airport_Codes.csv: Airport metadata including IATA codes and size classification
 
 **5. Functional Modules**
 • load_data() – Loads CSVs into pandas DataFrames.
+
 • data_quality_checks() – Performs null, duplicate, outlier, and data type validation across
 datasets.
+
 • clean_all_data() – Filters Q1 data, removes canceled/invalid flights, handles airport types
 and distances.
+
 • calculate_busiest_routes() – Identifies top 10 busiest round-trip routes by flight count.
+
 • calculate_profitability() – Estimates profit based on ticket, baggage revenue and cost
 structure.
+
 • recommend_top_investment_routes() – Ranks routes using a weighted scoring system
 based on multiple KPIs.
+
 • calculate_break_even_roundtrips() – Computes the number of trips to recover a $90M
 aircraft cost.
 
 **6. Metadata: New Columns created during the analysis**
 Key / Column Name Description
+
 ROUTE 1.
 A directional route string in format ORIGIN-DEST
 ROUNDTRIP_ROUTE A sorted combination of ORIGIN and DEST to represent bidirectional round
@@ -65,28 +75,46 @@ reliability.
 
 **5. Outputs & Visuals**
 • Data Quality checks - Code
+
 • Data Cleaning code – Code + EDA
+
 • Top 10 Busiest Routes – Table + Horizontal bar plot
+
 • Top 10 Most Profitable Routes – Table + Bar and Pie plots (also has 2 other graphs on the
 cost and revenue)
+
 • Investment Recommendations – Table + Bubble chart
+
 • Break-Even Analysis – Table + Horizontal bar plot
+
 • KPI recommendation for dashboard
 
 **6. Business Assumptions**
 • Each plane services one round trip route
+
 • Aircraft cost = $90 million (one-time fixed investment)
+
 • Max capacity = 200 passengers per flight; 50% check bags
+
 • Delay cost = $75/minute after first 15 minutes
+
 • Baggage fee = $35 per bag
+
 • Routes > 3000 miles are excluded (domestic filter)
 
 **7. Completion Summary**
 • Data Load & Quality Checks
+
 • Data Cleaning & Processing
+
 • Exploratory Data Analysis on Clean Data
+
 • Busiest Route Identification
+
 • Revenue & Cost Modeling
+
 • Scoring-based Recommendations
+
 • Break-even Profitability Analysis
+
 • KPI Recommendations
